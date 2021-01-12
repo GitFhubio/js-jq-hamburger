@@ -2,7 +2,7 @@
 // se i quadrati vicini a quello cliccato sono sicuri si rivelano
 // se nei paraggi c'è una mina esce il segnale bc! (be careful!)
 $( document ).ready(function() {
-    alert( "Vediamo se con JQuery ho vantaggi in un codice un pò più complesso" );
+    console.log( "Vediamo se con JQuery ho vantaggi in un codice un pò più complesso" );
 });
 
 function fabio()
