@@ -5,7 +5,6 @@ $( document ).ready(function() {
     alert( "Vediamo se con JQuery ho vantaggi in un codice un pò più complesso" );
 });
 
-
 function fabio()
 {
 var scelta=parseInt(document.getElementById('myselect').value);
@@ -488,3 +487,8 @@ if(isMinaVicinaBottom(this) && !giocata.includes('malevolo'))
 // Nota2: (c+'') è un trucco per considerare il numero una stringa,alternativa a toString
 
 // forse faccio qualche altra prova qui dentro slegata dal gioco
+$("*").addClass('blue');
+$('button')
+.hover(function(){$(this).addClass('yellow');},function(){$(this).removeClass('yellow');})
+.dblclick(function(){alert('Tanto non vinci comunque');
+});
