@@ -71,5 +71,30 @@ $('.hamburger-menu > a').click(function() {
 // potevo mettere:
 // a1)  $('.hamburger-menu').toggleClass('active'); anche toggle() senza niente perché tanto quello fa.
 // b1)  $('.hamburger-menu').toggleClass('active');
+
+// oppure tipo  agendo direttamente sul css bypassando la classe:
+
 // a2) $('.hamburger-menu').show();
 // b2)$('.hamburger-menu').hide();
+
+// a3)  $('.hamburger-menu').css('display','block')
+   // b3)  $('.hamburger-menu').css('display','none')
+
+   // OPPURE USARE JAVASCRIPT PURO
+   // CHE C'è NON SEI CAPACE FORSE?
+
+// var hamburger=document.getElementsByClassName('hamburger-menu')[0];
+
+// eh vorresti prendere l'id ma non puoi non imbrogliare non si cambia html
+// var close=document.getElementsByClassName('close')[0];
+// var open=document.getElementsByClassName('fa-bars')[0];
+//
+// open.addEventListener('click',function(){
+//
+//   hamburger.classList.add('active');
+// })
+// close.addEventListener('click',function(){
+//
+//   hamburger.classList.remove('active');
+// })
+// Sto cane... già non lo sapevi più fare.
