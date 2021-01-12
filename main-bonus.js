@@ -29,9 +29,17 @@
 //
 // })
 
-// 
+//
 // $('#piero').click(function(){
 // $('#totoggle').toggle(1000);
 //
 //
+// })
+
+
+// 
+// $('#totoggle').click(function(){
+// if($('#piero').hasClass('blue'))
+// {$('#piero').removeClass('blue').addClass('red');}
+// else{$('#piero').addClass('blue').removeClass('red')}
 // })
