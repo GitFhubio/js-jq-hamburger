@@ -160,8 +160,7 @@ var quadrati= $('.quadrato');
 
 console.log(quadrati);
 var giocateVinte=[];
-for (var i = 0; i < quadrati.length; i++) {
-quadrati[i].addEventListener('click',function(){
+quadrati.click(function(){
 
 
 var giocata=this.className;
@@ -203,7 +202,6 @@ audiofail.play();
 }
 
 })
-}
 
 // prendo solo il quadrato interno senza la cornice esterna per
 // "allargare la zona sicura" quando non ci sono mine nei paraggi
