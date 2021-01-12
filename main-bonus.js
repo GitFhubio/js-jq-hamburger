@@ -50,6 +50,13 @@
 
 // empty svuota,remove elimina proprio
 
-$('#piero').click(function(){
-$('#totoggle').find('p').remove('.test');}
-)
+// $('#piero').click(function(){
+// $('#totoggle').find('p').remove('.test');}
+// )
+
+
+// $('p').click(function()
+// {$(this).toggleClass();})
+//
+$('p').click(function()
+{$(this).toggleClass("blue red");})
