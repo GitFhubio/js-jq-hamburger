@@ -156,9 +156,8 @@ for (var x = 0; x < max; x++) {
 
 
 var quadrati= $('.quadrato');
-
 console.log(quadrati);
-var giocateVinte=[];
+var giocateVinte=0;
 quadrati.click(function(){
 
 suggerimento.innerText='';
@@ -166,11 +165,11 @@ if ($(this).hasClass('buono')){
 // alert('Bravo,hai evitato mine');
 $(this).addClass('verde-cliccato');
 var audiosuccess = new Audio('css/success.mp3');
-
 audiosuccess.play();
-giocateVinte.push(giocata);
-console.log(giocateVinte);
-if (giocateVinte.length==miomax-16) {
+
+giocateVinte+=1;
+console.log('hey'+giocateVinte);
+if (giocateVinte==miomax-16) {
 alert('Ma sei un mostro!Bravissimo,hai vinto');
 }
 // console.log(this.nextSibling.innerHTML);
@@ -216,6 +215,7 @@ for (var c = 11;c< quadrati.length; c++)
 quadrati[c].addEventListener('click',function(){
 
 var giocata=this.className;
+console.log('eeeee'+giocata);
 if (isMinaVicina(this) && !giocata.includes('malevolo')){
  this.append('\nBC!');
 }
