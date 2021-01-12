@@ -143,7 +143,7 @@ var mine= mine_generator(16,0,max-1);
 console.log(mine.sort(function(a, b){return a-b}));
 
 var griglia= $('#griglia');
-griglia.html();
+griglia.html('');
 for (var x = 0; x < max; x++) {
     if (!mine.includes(x))
    {griglia.append('<div class="quadrato buono">'+x+'</div>');
