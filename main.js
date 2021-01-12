@@ -53,6 +53,7 @@
 
 $('.header-right>a').click(function() {
   $('.hamburger-menu').addClass('active');
+
 });
 $('.hamburger-menu > a').click(function() {
   $('.hamburger-menu').removeClass('active');
@@ -64,9 +65,11 @@ $('.hamburger-menu > a').click(function() {
 // .header-right > a oppure  .fa-bars
 
 // varianti a livello di codice jquery:
-al posto di:
-a)  $('.hamburger-menu').addClass('active');
-b)  $('.hamburger-menu').removeClass('active');
-potevo mettere:
-a)  $('.hamburger-menu').toggleClass('active');
-b)  $('.hamburger-menu').toggleClass('active');
+// al posto di:
+// a)  $('.hamburger-menu').addClass('active');
+// b)  $('.hamburger-menu').removeClass('active');
+// potevo mettere:
+// a1)  $('.hamburger-menu').toggleClass('active'); anche senza niente come classe perché tanto quella è
+// b1)  $('.hamburger-menu').toggleClass('active');
+// a2) $('.hamburger-menu').show();
+// b2)$('.hamburger-menu').hide();
