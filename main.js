@@ -58,7 +58,15 @@ $('.hamburger-menu > a').click(function() {
   $('.hamburger-menu').removeClass('active');
 });
 
-// a livello di selezione css:
+// varianti a livello di selectors css:
 
 // .hamburger-menu > a oppure a.close
 // .header-right > a oppure  .fa-bars
+
+// varianti a livello di codice jquery:
+al posto di:
+a)  $('.hamburger-menu').addClass('active');
+b)  $('.hamburger-menu').removeClass('active');
+potevo mettere:
+a)  $('.hamburger-menu').toggleClass('active');
+b)  $('.hamburger-menu').toggleClass('active');
