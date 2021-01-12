@@ -162,15 +162,10 @@ console.log(quadrati);
 var giocateVinte=[];
 quadrati.click(function(){
 
-
-var giocata=this.className;
-console.log(giocata);
-console.log(PreAdiacenti(this));
-console.log(PostAdiacenti(this));
 suggerimento.innerText='';
-if (giocata.includes('buono')){
+if ($(this).hasClass('buono')){
 // alert('Bravo,hai evitato mine');
-this.classList.add('verde-cliccato');
+$(this).addClass('verde-cliccato');
 var audiosuccess = new Audio('css/success.mp3');
 
 audiosuccess.play();
@@ -193,9 +188,9 @@ alert('Ma sei un mostro!Bravissimo,hai vinto');
 // }
 // }
 }
- else if(giocata.includes('malevolo')){
+ else if($(this).hasClass('malevolo')){
 // alert('Hai preso una mina: hai perso');
-this.classList.add('rosso');
+$(this).addClass('rosso');
 var audiofail = new Audio('css/exp.mp3');
 audiofail.play();
  setTimeout(function(){ window.location.reload(false); }, 2000);
