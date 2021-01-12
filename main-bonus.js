@@ -37,9 +37,15 @@
 // })
 
 
-// 
+//
 // $('#totoggle').click(function(){
 // if($('#piero').hasClass('blue'))
 // {$('#piero').removeClass('blue').addClass('red');}
 // else{$('#piero').addClass('blue').removeClass('red')}
 // })
+
+//
+// innerHTML teoricamente è con html()
+// però se ho un innerHTML+= me la cavo con l'append...
+
+// empty svuota,remove elimina proprio
