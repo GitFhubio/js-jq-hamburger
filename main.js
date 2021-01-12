@@ -52,11 +52,11 @@
 // }
 
 $('.header-right>a').click(function() {
-  $('.hamburger-menu').addClass('active');
+  $('.hamburger-menu').toggle();
 
 });
 $('.hamburger-menu > a').click(function() {
-  $('.hamburger-menu').removeClass('active');
+  $('.hamburger-menu').toggle();
 });
 
 // varianti a livello di selectors css:
@@ -69,7 +69,7 @@ $('.hamburger-menu > a').click(function() {
 // a)  $('.hamburger-menu').addClass('active');
 // b)  $('.hamburger-menu').removeClass('active');
 // potevo mettere:
-// a1)  $('.hamburger-menu').toggleClass('active'); anche senza niente come classe perché tanto quella è
+// a1)  $('.hamburger-menu').toggleClass('active'); anche toggle() senza niente perché tanto quello fa.
 // b1)  $('.hamburger-menu').toggleClass('active');
 // a2) $('.hamburger-menu').show();
 // b2)$('.hamburger-menu').hide();
