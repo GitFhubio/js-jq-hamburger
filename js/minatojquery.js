@@ -207,7 +207,7 @@ audiofail.play();
 // cui devo inserire ulteriore condizione(ricavandomi l'ind)
 
 
-var estremo= miomax-1;
+var estremo=max-1;
 var ind = estremo.toString().charAt(0);
 
 var elementi=document.getElementsByClassName('quadrato');
