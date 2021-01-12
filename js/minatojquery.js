@@ -264,7 +264,7 @@ if(isMinaVicinaTop(this) && !giocata.includes('malevolo'))
 });
 }
 
-for (var i = 0; i < miomax-10; i++){
+for (var i = 0; i < max-10; i++){
 if(i % 10 == 0) {
 elementi[i].addEventListener('click',function(){
   var giocata=this.className;
@@ -274,7 +274,7 @@ if(isMinaVicinaLeft(this) && !giocata.includes('malevolo'))
 }
 }
 
-for (var i = 8; i <miomax ; i++){
+for (var i = 8; i <max ; i++){
 if((i+1) % 10 == 0) {
 elementi[i].addEventListener('click',function(){
   var giocata=this.className;
@@ -283,7 +283,7 @@ if(isMinaVicinaRight(this) && !giocata.includes('malevolo'))
 });
 }
 }
-for (var i = miomax-10; i <(miomax-1) ; i++) {
+for (var i = max-10; i <(max-1) ; i++) {
 elementi[i].addEventListener('click',function(){
   var giocata=this.className;
 if(isMinaVicinaBottom(this) && !giocata.includes('malevolo'))
