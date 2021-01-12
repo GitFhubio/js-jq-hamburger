@@ -49,3 +49,7 @@
 // però se ho un innerHTML+= me la cavo con l'append...
 
 // empty svuota,remove elimina proprio
+
+$('#piero').click(function(){
+$('#totoggle').find('p').remove('.test');}
+)
