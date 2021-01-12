@@ -88,6 +88,9 @@ $('.hamburger-menu > a').click(function() {
 // eh vorresti prendere l'id ma non puoi non imbrogliare non si cambia html
 // var close=document.getElementsByClassName('close')[0];
 // var open=document.getElementsByClassName('fa-bars')[0];
+
+// oppure c'era pure il querySelector vedi che di opzioni ne avevi non ti serve JQuery
+
 //
 // open.addEventListener('click',function(){
 //
