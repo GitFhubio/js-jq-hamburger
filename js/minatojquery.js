@@ -142,15 +142,15 @@ var mine= mine_generator(16,0,max-1);
 
 console.log(mine.sort(function(a, b){return a-b}));
 
-var griglia= document.getElementById('griglia');
-griglia.innerHTML="";
+var griglia= $('#griglia');
+griglia.html();
 for (var x = 0; x < max; x++) {
     if (!mine.includes(x))
-   {griglia.innerHTML+='<div class="quadrato buono">'+x+'</div>';
+   {griglia.append('<div class="quadrato buono">'+x+'</div>');
 
    }
    else{
-        griglia.innerHTML+='<div class="quadrato malevolo">'+x+'</div>';
+        griglia.append('<div class="quadrato malevolo">'+x+'</div>');
    }
 
 }
