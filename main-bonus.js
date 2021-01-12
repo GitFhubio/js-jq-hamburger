@@ -58,5 +58,16 @@
 // $('p').click(function()
 // {$(this).toggleClass();})
 //
-$('p').click(function()
-{$(this).toggleClass("blue red");})
+// $('p').click(function()
+// {$(this).toggleClass("blue red");})
+
+// $('div').first().empty();
+// $('div').eq(1).empty(); prende il secondo partendo da 0
+
+
+// $('p').filter('.test').css('border','5px solid black');
+// $('p').not('.test').css('border','5px solid black');
+// $('h2').siblings().remove();  tutti quelli prima e dopo
+// $('h2').next().remove();  nextAll se voglio levare tutti dopo
+// $('h2').prev().remove();
+// $('h2').nextUntil('.last').remove(); pongo il limite, last lo vedo
