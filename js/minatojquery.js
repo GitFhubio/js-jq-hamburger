@@ -487,8 +487,4 @@ if(isMinaVicinaBottom(this) && !giocata.includes('malevolo'))
 // Nota1:mi sono divertito molto.Dedicato a SS.
 // Nota2: (c+'') è un trucco per considerare il numero una stringa,alternativa a toString
 
-
-
-// Nota: Eh praticamente andrebbe ripensato
-// nella logica if HasClass
-// toggleClass,meglio studiare e pensarci più avanti
+// forse faccio qualche altra prova qui dentro slegata dal gioco
